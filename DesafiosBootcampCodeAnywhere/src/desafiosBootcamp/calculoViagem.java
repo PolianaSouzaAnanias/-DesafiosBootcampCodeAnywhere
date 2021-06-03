@@ -6,13 +6,18 @@ package desafiosBootcamp;
 import java.util.Scanner;
 
 public class calculoViagem {
-	Scanner scan = new Scanner(System.in);
-	System.out.println("Digite o tempo de viagem: ");
-int tempoGasto = leitor.nextInt();
+	public static void main(String[] args){
 
-System.out.println("Digite a velocidade média pecorrida em Km/h: ");
-int velocidadeMedia = leitor.nextInt();
+		Scanner scan = new Scanner(System.in);
 
+		int tempoGasto = scan.nextInt();{
 
-	System.out.printf("%.3f\n", (tempoGasto * velocidadeMedia)/12.0);
+		int velocidadeMedia = scan.nextInt();
+
+		int consumoMedio = 12;
+
+		System.out.printf("%.3f\n", (tempoGasto * velocidadeMedia)/consumoMedio);
+
+}
+}
 }
